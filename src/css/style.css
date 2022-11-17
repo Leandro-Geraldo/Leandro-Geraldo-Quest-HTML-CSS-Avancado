@@ -1,0 +1,113 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url(../img/bg-desktop.svg) no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.main{
+    max-width: 1447px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+}
+
+.main .container{
+    display: grid;
+    grid-template-areas:"logo logo"
+                        "main-content main-content"
+                        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .logo{
+    grid-area: logo;
+    margin-bottom: 7rem;
+}
+
+.container .logo img{
+    width: 20rem;
+}
+
+.container .main-content{
+    grid-area: main-content;
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.container .main-content .illustration img{
+    width: 80rem;
+}
+
+.container .main-content .info-content{
+    position: relative;
+    bottom: 9.5rem;
+}
+
+.container .main-content .info-content h1{
+    font-size: 3.5rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.container .main-content .info-content p{
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.container .main-content .info-content .btn{
+    padding: 15px 60px;
+    background-color: #fff;
+    border-radius: 50px;
+    color: var(--violet);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .main-content .info-content .btn:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+
+.container .footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.container .footer .social{
+    display: flex;
+    gap: 2rem;
+}
+
+.container .footer .social-button{
+    color: var(--font-color);
+    border: 1.8px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease-in-out;
+}
+
+.container .footer .social-button:hover{
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
